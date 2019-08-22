@@ -1,5 +1,5 @@
 {
-  "short_name": "XUST KCSoft",
+  "short_name": "xust-kcsoft",
   "name": "西安科技大学创新学院软件创新班",
   "icons": [
     {
@@ -13,4 +13,3 @@
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
- 
