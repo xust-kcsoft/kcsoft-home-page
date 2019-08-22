@@ -232,7 +232,7 @@ export default function AwardPage() {
 
     return (
         <React.Fragment>
-            <Background backgroundImage={BackgroundImage} backgroundColor={"#868FA699"}/>
+            <Background backgroundImage={BackgroundImage} backgroundColor={"rgba(134, 143, 166, 0.65)"}/>
             <Grid container={true} alignItems={"center"} justify={"center"} direction={"column"}>
                 <Grid item={true}>
                     <Grid container={true} className={styles.root} direction={"column"} justify={"center"}

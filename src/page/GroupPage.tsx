@@ -110,7 +110,8 @@ const persons: IPerson[] = [
 function PersonComponent({name, avatarSrc, position}: IPerson) {
     const styles = makeStyles(theme => ({
         paper: {
-            backgroundColor: "#868FA699",
+            // backgroundColor: "#868FA699",
+            backgroundColor: "rgba(134, 143, 166, 0.65)",
             width: 184,
             height: 200,
             paddingTop: 8,
@@ -125,7 +126,8 @@ function PersonComponent({name, avatarSrc, position}: IPerson) {
             [theme.breakpoints.down("xs")]: {
                 width: 64,
                 height: 64,
-            }
+            },
+            backgroundRepeat: "repeat",
         },
         name: {
             fontSize: 20,
@@ -190,7 +192,7 @@ export default function GroupPage() {
     }))();
     return (
         <React.Fragment>
-            <Background backgroundImage={BackgroundImage} backgroundColor={"#868FA699"}/>
+            <Background backgroundImage={BackgroundImage} backgroundColor={"rgba(134, 143, 166, 0.65)"}/>
 
             <Grid container={true} alignItems={"center"} justify={"center"} direction={"column"}>
                 <Grid item={true} className={styles.root}>

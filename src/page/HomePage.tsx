@@ -117,7 +117,7 @@ export default function HomePage() {
 
     return (
         <React.Fragment>
-            <Background backgroundImage={MainPageBackground} backgroundColor={"#39526EB2"} />
+            <Background backgroundImage={MainPageBackground} backgroundColor={"rgba(134, 143, 166, 0.65)"} />
             <Center>
                 <Grid container={true} direction={"column"} alignItems={"center"} spacing={6}
                       justify={"center"}>
