@@ -12,22 +12,33 @@ function Title() {
         root: {
             fontSize: ({fontSize}: { fontSize: number }) => fontSize,
             [theme.breakpoints.only('xs')]: {
-                fontSize: ({fontSize}: { fontSize: number }) => fontSize * 0.8
+                fontSize: ({fontSize}: { fontSize: number }) => fontSize * 0.6
             },
             textAlign: "center",
-            marginBottom: "-15px",
-            marginTop: "20px",
+        },
+        extra: {
+            [theme.breakpoints.only('xs')]: {
+                marginTop: "50px",
+            },
         }
     }));
 
+    const extraStyles = makeStyles(theme => ({
+        root: {
+            [theme.breakpoints.only('xs')]: {
+                marginTop: "325px",
+            },
+        }
+    }))();
+
     const titles = [
         {
-            text: "西安科技大学 创新学院 校软件创新班",
+            text: "西安科技大学 校软件创新班",
             fontSize: 48,
         },
         {
             text: "Innovation Institute Software Innovation Class",
-            fontSize: 20
+            fontSize: 24
         },
     ];
 
@@ -40,7 +51,7 @@ function Title() {
     }
 
     return (
-        <Grid container={true} direction={"column"} alignItems={"center"} justify={"center"} spacing={0}>
+        <Grid container={true} direction={"column"} alignItems={"center"} justify={"center"} spacing={0} className={extraStyles.root}>
             {
                 titles.map((props, index) => <TitleItem {...props} key={index}/>)
             }

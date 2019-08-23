@@ -48,7 +48,7 @@ const persons: IPerson[] = [
     {
         name: "王子童",
         avatarSrc: WangZitong,
-        position: "计算机学院研二",
+        position: "软件工程 研二",
     },
     {
         name: "陈航",
