@@ -18,6 +18,7 @@ import WangYing from "/src/assets/avatar/wy.jpg"
 import WangZihan from "/src/assets/avatar/wzh.jpg"
 import WangZitong from "/src/assets/avatar/wzt.jpg"
 import YuYichun from "/src/assets/avatar/yyc.jpg"
+import ShiXiaoNan from "/src/assets/avatar/sxn.jpg"
 import {Avatar, Container, Grid, Paper, Typography} from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
@@ -44,6 +45,11 @@ const persons: IPerson[] = [
         name: "冯娜",
         avatarSrc: Fengna,
         position: "财务部长 网工 17级",
+    },
+    {
+        name: "史晓楠",
+        avatarSrc: ShiXiaoNan,
+        position: "指导老师 计算机学院"
     },
     {
         name: "王子童",
