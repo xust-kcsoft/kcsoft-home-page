@@ -86,6 +86,16 @@ const persons: IPerson[] = [
         position: "软件工程 16级",
     },
     {
+        name: "丁磊",
+        avatarSrc: DingLei,
+        position: "网络工程 17级",
+    },
+    {
+        name: "刘尹强",
+        avatarSrc: LiuYiqiang,
+        position: "软件工程 17级",
+    },
+    {
         name: "罗心怡",
         avatarSrc: LuoXinyi,
         position: "软件工程 17级",
@@ -94,16 +104,6 @@ const persons: IPerson[] = [
         name: "王子涵",
         avatarSrc: WangZihan,
         position: "软件工程 17级"
-    },
-    {
-        name: "刘尹强",
-        avatarSrc: LiuYiqiang,
-        position: "软件工程 17级",
-    },
-    {
-        name: "丁磊",
-        avatarSrc: DingLei,
-        position: "网络工程 17级",
     },
 ];
 

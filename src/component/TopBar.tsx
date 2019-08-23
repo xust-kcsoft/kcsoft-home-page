@@ -7,8 +7,8 @@ import Tab from "@material-ui/core/Tab";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
-import {AccountGroup, Home, Seal} from "mdi-material-ui"
-import {AccountGroupOutline, HomeOutline, SealVariant} from "mdi-material-ui"
+import {AccountGroup, Home, Seal, Comment} from "mdi-material-ui"
+import {AccountGroupOutline, HomeOutline, SealVariant, CommentOutline} from "mdi-material-ui"
 import {useMediaQuery} from "@material-ui/core";
 import {Link} from "react-router-dom";
 import {RouterValue} from "../App";
@@ -17,7 +17,7 @@ import {RouterValue} from "../App";
 const makeStyle = makeStyles({
 
     title: {
-        fontSize: 20
+        fontSize: 20,
     },
 
     tab: {
@@ -79,7 +79,6 @@ function TopBarTabs({routeValue, handleChange}: ITopBarTabsProps) {
                 <Grid item={true} hidden={isCurrent}>
                     {iconDefault}
                 </Grid>
-
                 <Grid item={true} hidden={!useMediaQuery("(min-width: 1024px)")}>
                     <Typography className={isCurrent ? styles.tabSelected : styles.tab}>{text}</Typography>
                 </Grid>
@@ -102,6 +101,12 @@ function TopBarTabs({routeValue, handleChange}: ITopBarTabsProps) {
             iconDefault: <HomeOutline/>,
             text: "主页",
             value: "home",
+        },
+        {
+            iconSelected: <Comment/>,
+            iconDefault: <CommentOutline/>,
+            text: "简介",
+            value: "information",
         },
         {
             iconSelected: <AccountGroup/>,

@@ -33,7 +33,7 @@ function Title() {
             fontSize: 18
         },
         {
-            text: "软件创新班",
+            text: "校软件创新班",
             fontSize: 60
         }
     ];

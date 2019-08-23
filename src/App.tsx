@@ -4,6 +4,7 @@ import TopBar from "./component/TopBar";
 import createMuiTheme from "@material-ui/core/styles/createMuiTheme";
 import HomePage from "./page/HomePage";
 import AwardPage from "./page/AwardPage";
+import InformationPage from "./page/InformationPage";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {RouteComponentProps} from "react-router-dom";
 import GroupPage from "./page/GroupPage";
@@ -21,6 +22,7 @@ const theme = createMuiTheme({
 
 export type RouterValue =
     | "home"
+    | "information"
     | "group"
     | "award"
 
@@ -51,6 +53,10 @@ class AppRoute extends React.Component<IAppRouteProps, IAppRouteState> {
         {
             path: "home",
             component: <HomePage/>
+        },
+        {
+            path: "information",
+            component: <InformationPage/>
         },
         {
             path: "group",
