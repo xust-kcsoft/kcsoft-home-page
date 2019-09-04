@@ -52,6 +52,13 @@
     react-transition-group "^4.0.0"
     warning "^4.0.1"
 
+"@material-ui/icons@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.npm.taobao.org/@material-ui/icons/download/@material-ui/icons-4.2.1.tgz#fe2f1c4f60c24256d244a69d86d0c00e8ed4037e"
+  integrity sha1-/i8cT2DCQlbSRKadhtDADo7UA34=
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+
 "@material-ui/styles@^4.2.0", "@material-ui/styles@^4.2.1":
   version "4.2.1"
   resolved "https://registry.npm.taobao.org/@material-ui/styles/download/@material-ui/styles-4.2.1.tgz#b07383ffeaa840bcb6969eb17c5f0e3b734e8e5b"
@@ -5434,11 +5441,6 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
-
-mdi-material-ui@^6.4.1:
-  version "6.4.1"
-  resolved "https://registry.npm.taobao.org/mdi-material-ui/download/mdi-material-ui-6.4.1.tgz#779aea07b65993b6ebb334497295bf6f648f4be2"
-  integrity sha1-d5rqB7ZZk7brszRJcpW/b2SPS+I=
 
 media-typer@0.3.0:
   version "0.3.0"
