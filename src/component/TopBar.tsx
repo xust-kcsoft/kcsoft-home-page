@@ -7,8 +7,15 @@ import Tab from "@material-ui/core/Tab";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import Grid from "@material-ui/core/Grid";
 import Avatar from "@material-ui/core/Avatar";
-import {AccountGroup, Home, Seal, Comment} from "mdi-material-ui"
-import {AccountGroupOutline, HomeOutline, SealVariant, CommentOutline} from "mdi-material-ui"
+import AssessmentIcon from "@material-ui/icons/Assessment";
+import AssessmentOutlinedIcon from "@material-ui/icons/AssessmentOutlined";
+import HomeIcon from "@material-ui/icons/Home";
+import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
+import GroupIcon from "@material-ui/icons/Group";
+import GroupOutlinedIcon from "@material-ui/icons/GroupOutlined";
+import SmsIcon from "@material-ui/icons/Sms";
+import SmsOutlinedIcon from "@material-ui/icons/SmsOutlined";
+
 import {useMediaQuery} from "@material-ui/core";
 import {Link} from "react-router-dom";
 import {RouterValue} from "../App";
@@ -97,28 +104,28 @@ function TopBarTabs({routeValue, handleChange}: ITopBarTabsProps) {
 
     const tabs: ITopBarTabProps[] = [
         {
-            iconSelected: <Home/>,
-            iconDefault: <HomeOutline/>,
+            iconSelected: <HomeIcon/>,
+            iconDefault: <HomeOutlinedIcon/>,
             text: "主页",
             value: "home",
         },
         {
-            iconSelected: <Comment/>,
-            iconDefault: <CommentOutline/>,
+            iconSelected: <SmsIcon/>,
+            iconDefault: <SmsOutlinedIcon/>,
             text: "简介",
             value: "information",
         },
         {
-            iconSelected: <AccountGroup/>,
-            iconDefault: <AccountGroupOutline/>,
+            iconSelected: <GroupIcon/>,
+            iconDefault: <GroupOutlinedIcon/>,
             text: "成员",
             value: "group"
         },
         {
-            iconSelected: <Seal/>,
-            iconDefault: <SealVariant/>,
-            text: "奖项",
-            value: "award",
+            iconSelected: <AssessmentIcon/>,
+            iconDefault: <AssessmentOutlinedIcon/>,
+            text: "建设",
+            value: "build",
         },
     ];
 
