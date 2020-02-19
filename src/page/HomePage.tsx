@@ -114,7 +114,6 @@ function Address() {
 }
 
 export default function HomePage() {
-
     return (
         <React.Fragment>
             <Background backgroundImage={MainPageBackground} backgroundColor={"rgba(134, 143, 166, 0.65)"} />
