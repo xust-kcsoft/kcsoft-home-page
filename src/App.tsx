@@ -8,6 +8,7 @@ import InformationPage from "./page/InformationPage";
 import {BrowserRouter, Redirect, Route, Switch} from "react-router-dom";
 import {RouteComponentProps} from "react-router-dom";
 import GroupPage from "./page/GroupPage";
+import Footer from './component/Footer';
 
 const theme = createMuiTheme({
     palette: {
@@ -76,9 +77,6 @@ class AppRoute extends React.Component<IAppRouteProps, IAppRouteState> {
 
 
     public render() {
-
-
-
         const param = this.state.param;
         let prop = this.routers.filter(p => p.path === param)[0];
         prop = prop === undefined ? this.routers[0] : prop;
@@ -102,7 +100,6 @@ class AppRoute extends React.Component<IAppRouteProps, IAppRouteState> {
 
 
 export default function App() {
-
     return (
         <MuiThemeProvider theme={theme}>
             <BrowserRouter>
@@ -111,6 +108,7 @@ export default function App() {
                     <Route path={"/:param"} component={AppRoute}/>
                 </Switch>
             </BrowserRouter>
+            <Footer/>
         </MuiThemeProvider>
     );
 }
